@@ -1,0 +1,131 @@
+[
+  {
+    "name": "Premium Ultrabook",              
+    "if": [
+      "budget_high",
+      "portable",
+      "long_battery"
+    ],
+    "then": "recommend:premium_ultrabook",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Student light office",
+    "if": [
+      "budget_low",
+      "office_work",
+      "portable"
+    ],
+    "then": "recommend:budget_ultrabook",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Gaming",
+    "if": [
+      "gaming",
+      "budget_medium",
+      "portable"
+    ],
+    "then": "recommend:midrange_gaming_laptop",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Pro_Gaming",
+    "if": [
+      "gaming",
+      "budget_high"
+    ],
+    "then": "recommend:high_end_gaming_laptop",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Creative_work_portable",
+    "if": [
+      "creativity",
+      "portable"
+    ],
+    "then": "spec:ram_16_plus",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Creative_work_display",
+    "if": [
+      "creativity",
+      "large-screen"
+    ],
+    "then": "spec:display_15_plus_color_accurate",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Travel_battery",
+    "if": [
+      "travels",
+      "long_battery"
+    ],
+    "then": "spec:display_battery_60wh_plus",
+    "priority": 5
+  },
+
+
+  {
+    "name": "OS-preference_windows",
+    "if": [
+      "windows"
+    ],
+    "then": "spec:windows__required",
+    "priority": 5
+  },
+
+
+  {
+    "name": "OS-preference-linux",
+    "if": [
+      "linux"
+    ],
+    "then": "spec:linux__required",
+    "priority": 5
+  },
+
+
+  {
+    "name": "OS-preference-mac",
+    "if": [
+      "mac"
+    ],
+    "then": "spec:macos__required",
+    "priority": 5
+  },
+
+
+  {
+    "name": "Ai_acceleration",
+    "if": [
+      "ai-acceleration"
+    ],
+    "then": "spec:gpu_with_tensor_cores",
+    "priority": 5
+  },
+
+  
+  {
+    "name": "Linux-suitability",
+    "if": [
+      "linux",
+      "office_work"
+    ],
+    "then": "spec:linux_friendly_hw",
+    "priority": 5
+  }
+]
